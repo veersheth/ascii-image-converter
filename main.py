@@ -35,7 +35,7 @@ def main(new_width=100):
     ascii_image = "\n".join([ascii_str[i:(i+new_width)] for i in range(0, pixel_count, new_width)])
     print(ascii_image)
 
-    f = file.open("output,txt", w)
+    f = open("output.txt", "w")
     f.write(ascii_image)
     print("\n\nwritten to output.txt")
 
